@@ -5,17 +5,29 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/app.js"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "mongoose": "^9.3.3",
     "nodemon": "^3.1.14"
   },
   "devDependencies": {
-    "@types/mongoose": "^5.11.96"
-  }
+    "@types/express": "^5.0.6",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^25.5.0",
+    "ts-node-dev": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuvi264/Brainly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yuvi264/Brainly/issues"
+  },
+  "homepage": "https://github.com/Yuvi264/Brainly#readme"
 }
